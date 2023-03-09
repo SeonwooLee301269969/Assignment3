@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Image Grid</title>
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 10px;
+		}
+		.flexbox {
+			display: flex;
+			flex-wrap: wrap;
+			width: 80%;
+			max-width: 960px;
+			margin: 0 auto;
+			box-sizing: border-box;
+		}
+			
+		.flexboxImg{
+			display: flex;
+			flex-direction: row;
+			gap: 6px;
+			justify-content: space-evenly;
+		}
+		.flexboxImg div {
+			flex:1;
+		}
+
+		.flexboxImg img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+	
+		@media screen and (max-width: 800px) {
+			.flexboxImg div:nth-child(even){
+				display: none;
+			}
+		}
+			
+			@media screen and (max-width: 600px) {
+				.flexboxImg div {
+					display: none;
+				}
+			.flexboxImg div:first-child {
+				display: flex;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="flexbox">
+	<div class="flexboxImg">
+		<div><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/3Falls_Niagara.jpg" alt="Niagara Falls"></div>
+		<div><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/3Falls_Niagara.jpg" alt="Niagara Falls"></div>
+		<div><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/3Falls_Niagara.jpg" alt="Niagara Falls"></div>
+		<div><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/3Falls_Niagara.jpg" alt="Niagara Falls"></div>
+	</div>
+	<div class="flexboxImg">
+		<div><img src="https://www.meganstarr.com/wp-content/uploads/2020/11/Moraine-Lake-in-Banff-Canada.jpg" alt="Rocky Mountains"></div>
+		<div><img src="https://www.meganstarr.com/wp-content/uploads/2020/11/Moraine-Lake-in-Banff-Canada.jpg" alt="Rocky Mountains"></div>
+		<div><img src="https://www.meganstarr.com/wp-content/uploads/2020/11/Moraine-Lake-in-Banff-Canada.jpg" alt="Rocky Mountains"></div>
+		<div><img src="https://www.meganstarr.com/wp-content/uploads/2020/11/Moraine-Lake-in-Banff-Canada.jpg" alt="Rocky Mountains"></div>
+	</div>
+	<div class="flexboxImg">
+		<div><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2f/e4/toronto.jpg?w=700&h=500&s=1" alt="Toronto Skyline"></div>
+		<div><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2f/e4/toronto.jpg?w=700&h=500&s=1" alt="Toronto Skyline"></div>
+		<div><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2f/e4/toronto.jpg?w=700&h=500&s=1" alt="Toronto Skyline"></div>
+		<div><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2f/e4/toronto.jpg?w=700&h=500&s=1" alt="Toronto Skyline"></div>
+	</div>
+</div>
+
+</body>
+</html>
+
+
